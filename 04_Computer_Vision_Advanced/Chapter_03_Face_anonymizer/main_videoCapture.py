@@ -18,7 +18,6 @@ def process_img(image, face_detection):
                 w_box = int(bbox.width * width)
                 h_box = int(bbox.height * height)
 
-                # Clamp coordinates to image bounds
                 x = max(0, x)
                 y = max(0, y)
                 x_end = min(width, x + w_box)
