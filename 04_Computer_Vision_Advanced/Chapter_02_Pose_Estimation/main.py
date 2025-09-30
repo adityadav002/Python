@@ -28,7 +28,7 @@ while True:
             h, w, _ = resized_frame.shape
             print(id, lm)
             cx, cy = int(lm.x*w), int(lm.y*h)
-            cv2.circle(resized_frame, (cx, cy), 10, (255, 0, 0), cv2.FILLED)
+            cv2.circle(resized_frame, (cx, cy), 3, (255, 0, 0), cv2.FILLED)
 
     cTime = time.time()
     fps = 1 / (cTime - pTime)
