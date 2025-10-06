@@ -6,7 +6,7 @@ if image is None:
     print("Could not read the image.")
     exit()
 else:
-    median_blur = cv2.medianBlur(image, 11)
+    median_blur = cv2.medianBlur(image, 7)
     cv2.imshow('Original Image', image)
     cv2.imshow('Median Blurred Image', median_blur)
     cv2.waitKey(0)
